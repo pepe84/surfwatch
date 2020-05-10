@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Heroic Features - Start Bootstrap Template</title>
+  <title>surfwatch 🌊👀</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,32 +16,50 @@
   <!-- Custom styles for this template -->
   <link href="css/heroic-features.css" rel="stylesheet">
 
+  <!-- Custom styles for this site -->
+  <style>
+    #surfwatch .container {
+      max-width: 95%;
+    }
+    #surfwatch .navbar {
+      padding: 0;
+    }
+    #surfwatch .card-img-top {
+      height: 300px;
+    }
+    #surfwatch .card-body {
+      padding: 0.50rem;
+     }
+      #surfwatch .card-text iframe {
+        width: 382px;
+        height: 164px;
+        overflow: hidden;
+      }
+    #surfwatch footer svg {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+
 </head>
 
-<body>
+<body id="surfwatch">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="">surfwatch 🌊👀</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <div class="float-right btn-group right">
+              <button type="button" class="btn btn-sm btn-outline-secondary surfwatch-webcam active">📽️</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary surfwatch-now active">🏄</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary surfwatch-future active">📅</button>
+            </div>
           </li>
         </ul>
       </div>
@@ -52,64 +70,59 @@
   <div class="container">
 
     <!-- Jumbotron Header -->
+    <!--
     <header class="jumbotron my-4">
       <h1 class="display-3">A Warm Welcome!</h1>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
       <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
     </header>
+    -->
 
     <!-- Page Features -->
     <div class="row text-center">
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <!--<img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
+          <iframe class="card-img-top surfwatch-webcam" src="https://v.angelcam.com/iframe?v=16lb7jbdy4&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJjbW1vbnRnYXQuY2xpY2syc3RyZWFtLmNvbSIsImNhbWVyYV9pZCI6MzA1OTYsImV4cCI6MTU4OTE5ODE2OX0.Lfei9nfLANsdrQdhfg_HrpHxuaHo35154HWxHK9q-2k&autoplay=1"></iframe>
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            <h4 class="card-title">Montgat</h4>
+            <p class="card-text">
+              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37152" frameborder="0"></iframe>
+              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37152" frameborder="0"></iframe>
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
+          <!--<div class="card-footer"></div>-->
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <!--<img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
+          <iframe class="card-img-top surfwatch-webcam" src="https://v.angelcam.com/iframe?v=enl022zey8&autoplay=0"></iframe>
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+            <h4 class="card-title">El Prat</h4>
+            <p class="card-text">
+              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37144" frameborder="0"></iframe>
+              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37144" frameborder="0"></iframe>
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
+          <!--<div class="card-footer"></div>-->
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <!--<img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
+          <iframe class="card-img-top surfwatch-webcam" src="https://v.angelcam.com/iframe?v=z1nr8jo9l0&autoplay=0&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW4iOiJpbmZvcmNlbHJhLmNvbSIsImNhbWVyYV9pZCI6NDAzNCwiZXhwIjoxNTQwMjgxMTA2fQ.HKEs7R47EicQyDSApvhyynT9-7p47YG4BFr_kVE2XGw"></iframe>
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            <h4 class="card-title">Port Ginesta</h4>
+            <p class="card-text">
+              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37142" frameborder="0"></iframe>
+              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37142" frameborder="0"></iframe>
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
+          <!--<div class="card-footer"></div>-->
         </div>
       </div>
 
@@ -120,9 +133,14 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-2 bg-dark fixed-bottom">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        <p class="m-0 text-center text-white">
+            <a href="https://choosealicense.com/licenses/mit/">MIT License</a> &copy; surfwatch 2020
+            <a href="https://github.com/pepe84/surfwatch" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
+            </a>
+        </p>
     </div>
     <!-- /.container -->
   </footer>
@@ -130,6 +148,33 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom script for this site -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Show / hide elements
+      var classes = [
+        "surfwatch-webcam",
+        "surfwatch-now",
+        "surfwatch-future"
+      ];
+      for (var i in classes) {
+        var $iframe = $("iframe."+classes[i]);
+        var $btn = $("button."+classes[i]);
+        (function($iframe, $btn){
+          $btn.click(function(){
+            if ($btn.hasClass("active")) {
+              $iframe.hide();
+              $btn.removeClass("active");
+            } else {
+              $iframe.show();
+              $btn.addClass("active");
+            }
+          });
+        })($iframe, $btn);
+      }
+    });
+  </script>
 
 </body>
 
