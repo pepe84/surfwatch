@@ -235,7 +235,7 @@
         "surfwatch-future"
       ];
       for (var i in classes) {
-        var $iframe = $("iframe."+classes[i]);
+        var $iframe = $("iframe."+classes[i]+",img."+classes[i]);
         var $btn = $("button."+classes[i]);
         (function($iframe, $btn){
           // Initialize view
