@@ -17,33 +17,7 @@
   <link href="css/heroic-features.css" rel="stylesheet">
 
   <!-- Custom styles for this site -->
-  <style>
-  #surfwatch .container {
-    max-width: 95%;
-  }
-  #surfwatch .navbar {
-    padding: 0;
-  }
-  #surfwatch .card-img-top {
-    height: 250px;
-  }
-  #surfwatch .card-body {
-    padding: 0.50rem;
-  }
-    #surfwatch .webcam-link:hover {
-      text-decoration: none;
-      background-color: #f7f30e;
-    }
-    #surfwatch .card-text iframe {
-      width: 382px;
-      height: 164px;
-      overflow: hidden;
-    }
-  #surfwatch footer svg {
-    width: 24px;
-    height: 24px;
-  }
-  </style>
+  <link href="css/surfwatch.css" rel="stylesheet">
 
 </head>
 
@@ -56,9 +30,9 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <div class="float-right btn-group right">
-            <button type="button" title="Webcams" class="btn btn-sm btn-outline-secondary surfwatch-webcam active">📽️</button>
-            <button type="button" title="Current weather" class="btn btn-sm btn-outline-secondary surfwatch-now">🏄</button>
-            <button type="button" title="Future weather" class="btn btn-sm btn-outline-secondary surfwatch-future">📅</button>
+            <button id="surfwatch-webcam" type="button" title="Webcams" class="btn btn-sm btn-outline-secondary active">📽️</button>
+            <button id="surfwatch-now" type="button" title="Current weather" class="btn btn-sm btn-outline-secondary">🏄</button>
+            <button id="surfwatch-future" type="button" title="Future weather" class="btn btn-sm btn-outline-secondary">📅</button>
           </div>
         </li>
       </ul>
@@ -85,10 +59,7 @@
           <img class="card-img-top surfwatch-webcam" src="https://w9.bcn.cat/dades/platges/images/webcam_1.jpg"></img>
           <div class="card-body">
             <h4 class="card-title">BCN Barceloneta / SS <a class="webcam-link" href="https://w9.bcn.cat/dades/platges/images/webcam_1.jpg" target="_blank">📷</a> <a class="webcam-link" href="https://www.skylinewebcams.com/es/webcam/espana/cataluna/barcelona/playa-barceloneta.html" target="_blank">📽</a> <a class="webcam-link" href="https://www.skylinewebcams.com/es/webcam/espana/cataluna/barcelona/playa-sant-sebastia.html" target="_blank">📽</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37146" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37146" frameborder="0"></iframe>
-            </p>
+            <p id="37146" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -133,11 +104,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h4 class="card-title">BCN Bogatell <a class="webcam-link" href="https://w9.bcn.cat/dades/platges/images/webcam_6.jpg" target="_blank">📷</a> <a class="webcam-link" href="https://w9.bcn.cat/dades/platges/images/webcam_5.jpg" target="_blank">📷</a> <a class="webcam-link" href="https://www.liveincam.com/?w=445" target="_blank">📽</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37150" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37150" frameborder="0"></iframe>
-            </p>
+            <h4 class="card-title">BCN Bogatell <a class="webcam-link" href="https://w9.bcn.cat/dades/platges/images/webcam_6.jpg" target="_blank">📷</a> <a class="webcam-link" href="https://w9.bcn.cat/dades/platges/images/webcam_5.jpg" target="_blank">📷</a> <a class="webcam-link" href="https://www.liveincam.com/en/cam/barcelona-barcelona-base-nautica" target="_blank">📽</a></h4>
+            <p id="37150" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -148,10 +116,7 @@
           <img class="card-img-top surfwatch-webcam" src="http://telemetrics.es/cnem/jpg/cnem_img.jpg"></img>
           <div class="card-body">
             <h4 class="card-title">Masnou <a class="webcam-link" href="https://nauticmasnou.com/meteo/" target="_blank">📷</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37152" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37152" frameborder="0"></iframe>
-            </p>
+            <p id="37152" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -162,10 +127,7 @@
           <iframe class="card-img-top surfwatch-webcam" src="https://v.angelcam.com/iframe?v=16lb7jbdy4&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJjbW1vbnRnYXQuY2xpY2syc3RyZWFtLmNvbSIsImNhbWVyYV9pZCI6MzA1OTYsImV4cCI6MTU5MTY4MjQwN30.sb9GpiG1k7OYQh__KQQoqf5wltYF2ws0xxL5t_b4ReE&autoplay=1"></iframe>
           <div class="card-body">
             <h4 class="card-title">Montgat <a class="webcam-link" href="https://cmmontgat.click2stream.com/" target="_blank">📽</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37152" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37152" frameborder="0"></iframe>
-            </p>
+            <p id="37152" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -176,10 +138,7 @@
           <iframe class="card-img-top surfwatch-webcam" src="https://v.angelcam.com/iframe?v=enl022zey8&autoplay=0"></iframe>
           <div class="card-body">
             <h4 class="card-title">El Prat <a class="webcam-link" href="http://www.streamingbarcelona.com/plataforma/ajuntament-elprat/embed/" target="_blank">📽</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37144" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37144" frameborder="0"></iframe>
-            </p>
+            <p id="37144" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -190,10 +149,7 @@
           <iframe class="card-img-top surfwatch-webcam" src="https://www.youtube.com/embed/oe5GPi_C7Go?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="card-body">
             <h4 class="card-title">Castelldefels <a class="webcam-link" href="https://www.youtube.com/embed/oe5GPi_C7Go?controls=0" target="_blank">📽</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37143" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37143" frameborder="0"></iframe>
-            </p>
+            <p id="37143" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -204,10 +160,7 @@
           <iframe class="card-img-top surfwatch-webcam" src="https://v.angelcam.com/iframe?v=z1nr8jo9l0&autoplay=0&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW4iOiJpbmZvcmNlbHJhLmNvbSIsImNhbWVyYV9pZCI6NDAzNCwiZXhwIjoxNTQwMjgxMTA2fQ.HKEs7R47EicQyDSApvhyynT9-7p47YG4BFr_kVE2XGw"></iframe>
           <div class="card-body">
             <h4 class="card-title">Port Ginesta <a class="webcam-link" href="http://www.portginesta.com/surfspot" target="_blank">📽</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37142" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37142" frameborder="0"></iframe>
-            </p>
+            <p id="37142" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -218,10 +171,7 @@
           <iframe class="card-img-top surfwatch-webcam" src="https://www.ccma.cat/el-temps/embed/vilanova-i-la-geltru/cameraembed/10/"></iframe>
           <div class="card-body">
             <h4 class="card-title">Vilanova i la Geltrú <a class="webcam-link" href="https://www.ccma.cat/el-temps/embed/vilanova-i-la-geltru/cameraembed/10/" target="_blank">📷</a></h4>
-            <p class="card-text">
-              <iframe class="surfwatch-now" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code=37138" frameborder="0"></iframe>
-              <iframe class="surfwatch-future" scrolling="no" src="https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code=37138" frameborder="0"></iframe>
-            </p>
+            <p id="37138" class="card-text surfwatch-meteo"></p>
           </div>
           <!--<div class="card-footer"></div>-->
         </div>
@@ -251,38 +201,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom script for this site -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      // Show / hide elements
-      var classes = [
-        "surfwatch-webcam",
-        "surfwatch-now",
-        "surfwatch-future"
-      ];
-      for (var i in classes) {
-        var $iframe = $("iframe."+classes[i]+",img."+classes[i]);
-        var $btn = $("button."+classes[i]);
-        (function($iframe, $btn){
-          // Initialize view
-          $iframe.bind("load", function(){
-            if (!$btn.hasClass("active")) {
-              $iframe.hide();
-            }
-          });
-          // Event handler
-          $btn.click(function(){
-            if ($btn.hasClass("active")) {
-              $iframe.hide();
-              $btn.removeClass("active");
-            } else {
-              $iframe.show();
-              $btn.addClass("active");
-            }
-          });
-        })($iframe, $btn);
-      }
-    });
-  </script>
+  <script src="js/surfwatch.js"></script>
 
 </body>
 

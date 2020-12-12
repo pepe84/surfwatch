@@ -1,0 +1,25 @@
+#surfwatch .container {
+    max-width: 95%;
+  }
+  #surfwatch .navbar {
+    padding: 0;
+  }
+  #surfwatch .card-img-top {
+    height: 250px;
+  }
+  #surfwatch .card-body {
+    padding: 0.50rem;
+  }
+    #surfwatch .webcam-link:hover {
+      text-decoration: none;
+      background-color: #f7f30e;
+    }
+    #surfwatch .card-text iframe {
+      width: 382px;
+      height: 164px;
+      overflow: hidden;
+    }
+  #surfwatch footer svg {
+    width: 24px;
+    height: 24px;
+  }
