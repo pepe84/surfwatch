@@ -1,7 +1,7 @@
 // Weather data
 var meteo = {
-    "surfwatch-now": "https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetRT.jsp?locale=es&location=beach&code={code}",
-    "surfwatch-future": "https://portus.puertos.es/Portus_RT/portusgwt/infoubicaciones/widgetFC.jsp?locale=es&location=beach&code={code}"
+    "surfwatch-now": "https://portus.puertos.es/index.html#/locationsRTWidget?locationType=Playa&code={code}&theme=dark&locale=es",
+    "surfwatch-future": "https://portus.puertos.es/#/locationsPredWidget?locationType=Playa&code={code}&theme=dark&locale=es"
 };
 
 $(document).ready(function () {
