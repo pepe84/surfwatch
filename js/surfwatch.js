@@ -53,3 +53,9 @@ $(document).ready(function () {
         }
     });
 });
+
+/**
+ * Dynamic iframe resize
+ * @see https://github.com/davidjbradshaw/iframe-resizer/
+ */
+iFrameResize({ log: true }, 'iframe')

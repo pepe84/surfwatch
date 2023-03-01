@@ -14,12 +14,40 @@
       text-decoration: none;
       background-color: #f7f30e;
     }
-    #surfwatch .card-text iframe {
-      width: 382px;
+    #surfwatch iframe.surfwatch-now,
+    #surfwatch iframe.surfwatch-future {
+      /*width: 400px;*/
       height: 164px;
       overflow: hidden;
+    }
+    #surfwatch iframe.surfwatch-future {
+      height: 140px;
     }
   #surfwatch footer svg {
     width: 24px;
     height: 24px;
   }
+
+/**
+ * Dynamic iframe resize
+ * @see https://github.com/davidjbradshaw/iframe-resizer/
+ */
+ iframe {
+  width: 1px;
+  min-width: 100%;
+} 
+
+/* Scale iframe 
+@media screen and ((min-width: 992px) and (max-width: 1416px)){  
+  #surfwatch iframe.surfwatch-now,
+  #surfwatch iframe.surfwatch-future {
+    zoom: 0.78;
+    -moz-transform: scale(0.78);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.78);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.78);
+    -webkit-transform-origin: 0 0;
+  }
+}
+*/
