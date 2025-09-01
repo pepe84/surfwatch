@@ -12,7 +12,7 @@ export function BeachesProvider({ children }) {
   }, []);
 
   return (
-    <BeachesContext.Provider value={beaches}>
+    <BeachesContext.Provider value={{beaches}}>
       {children}
     </BeachesContext.Provider>
   );

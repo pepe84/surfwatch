@@ -1,34 +1,52 @@
 import { useState } from "react";
-import Spinner from "react-bootstrap/Spinner";
+import { Spinner, Card, Button } from "react-bootstrap";
+import NoPreview from "../assets/No_Preview_1.jpg"
 
-export default function WebcamCard({ webcam }) {
+export default function WebcamCard({ webcam, showCaption = false }) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="card">
+    <Card>
       {loading && <Spinner animation="border" />}
-      {webcam.type == "photo" ? (
-        <>
+      {(webcam.type == "photo" || webcam.type == "video") && (
+        <a href={webcam.src}>
           <img
             className="card-img-top"
-            src={webcam.src}
+            src={webcam.type=="photo" ? webcam.src : (webcam.preview ? webcam.preview : NoPreview )}
             alt={webcam.name}
             loading="lazy"
-            onLoad={() => setLoading(false)}
+            onLoad={() => setLoading(false)} 
+            onError={() => setLoading(false)}
           />
-        </>
-      ) : (
+        </a>
+      )}
+      {webcam.type == "iframe" && (
         <iframe
           className="card-img-top"
           src={webcam.src}
           title={webcam.caption}
           loading="lazy"
-          onLoad={() => setLoading(false)}
+          onLoad={() => setLoading(false)} 
+          onError={() => setLoading(false)}
         ></iframe>
       )}
-      <div className="card-body">
-        <p className="card-text">{webcam.caption}</p>
-      </div>
-    </div>
+      {webcam.type == "m3u8" && (
+        <iframe
+          className="card-img-top"
+          src={webcam.src}
+          title={webcam.caption}
+          loading="lazy"
+          onLoad={() => setLoading(false)} 
+          onError={() => setLoading(false)}
+        ></iframe>
+      )}
+      { showCaption && 
+        <Card.Body>
+          <Card.Text>
+            <span class="me-2">{webcam.type=="photo" ? "📷" : "📽"}</span><a href={ webcam.link ? webcam.link : webcam.src }>{webcam.caption}</a>
+          </Card.Text>
+        </Card.Body>
+      }
+    </Card>
   );
 }

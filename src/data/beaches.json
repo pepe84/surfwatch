@@ -1,87 +1,119 @@
 {
-  "amb": {
-    "name": "AMB",
-    "flag": "🌊",
-    "locations": {
-      "bcn-bogatell": {
-        "name": "BCN Bogatell",
-        "code": "37150",
-        "webcams": [
-          { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara5.jpg", "caption": "Webcam 5", "type": "photo" },
-          { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara6.jpg", "caption": "Webcam 6", "type": "photo" },
-          { "src": "https://cdn.skylinewebcams.com/live1469.jpg", "caption": "Webcam Base Nàutica", "type": "video" }
-        ]
+  "catalunya": {
+    "name": "Catalunya",
+    "flag": "Catalonia.svg",
+    "zones": {
+      "amb": {
+        "name": "AMB",
+        "locations": {
+          "bcn-barceloneta": {
+            "name": "BCN Barceloneta",
+            "code": "37146",
+            "region": "Barcelonès",
+            "webcams": [
+              { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara1.jpg", "caption": "Webcam 1 Ajuntament BCN", "type": "photo" },
+              { "src": "https://www.skylinewebcams.com/es/webcam/espana/cataluna/barcelona/playa-barceloneta.html", "caption": "Skyline webcams", "type": "video", "preview": "https://embed.skylinewebcams.com/img/492.jpg" },
+              { "src": "https://www.surfline.com/surf-report/barceloneta/584204204e65fad6a770947d?camId=5c6c3e54d03b7b700c16d629&pageSection=liveCam&view=table", "caption": "BoardRiders Barcelona", "type": "video", "preview": "https://camstills.cdn-surfline.com/eu-west-1/es-barceloneta/latest_small.jpg" }
+            ]
+          },
+          "bcn-bogatell": {
+            "name": "BCN Bogatell",
+            "code": "37150",
+            "region": "Barcelonès",
+            "webcams": [
+              { "src": "https://www.skylinewebcams.com/es/webcam/espana/cataluna/barcelona/barcelona-base-nautica.html", "caption": "Webcam Base Nàutica", "type": "video", "preview": "https://embed.skylinewebcams.com/img/1469.jpg" },
+              { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara5.jpg", "caption": "Webcam 5 Ajuntament BCN", "type": "photo" }
+            ]
+          },
+          "bcn-llevant": {
+            "name": "BCN Llevant",
+            "code": "37150",
+            "region": "Barcelonès",
+            "webcams": [
+              { "src": "https://bharadwajpro.github.io/m3u8-player/player/#https://wow.camaramar.com/camaramar/63_llevant.stream/playlist.m3u8", "caption": "Blue Salt (via Camaramar)", "type": "iframe", "link": "https://www.camaramar.com/webcam/cataluna_barcelona_llevant" },              
+              { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara6.jpg", "caption": "Webcam 6 Ajuntament BCN", "type": "video" }
+            ]
+          },
+          "badalona": {
+            "name": "Badalona",
+            "code": "37151",
+            "region": "Barcelonès",
+            "webcams": [
+              { "src": "http://cnbadalona.cat/cam/llevant.php", "caption": "Càmara Llevant CN Badalona", "type": "video", "preview": "http://2.136.193.46:8082/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=Cnb&pwd=Club@00&1756739364216" },
+              { "src": "http://cnbadalona.cat/cam/garbi.php", "caption": "Càmara Garbí CN Badalona", "type": "video", "preview": "http://2.136.193.46:8081/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=Cnb&pwd=Club@00&1756739798663" }
+            ]            
+          },
+          "masnou": {
+            "name": "Masnou",
+            "code": "37152",
+            "region": "Maresme",
+            "webcams": [
+              { "src": "https://bharadwajpro.github.io/m3u8-player/player/#https://wow.camaramar.com/camaramar/63_masnou.stream/playlist.m3u8", "caption": "Maresme Waves (via Camaramar)", "type": "iframe", "link": "https://www.maresmewaves.com/webcam-barcelona/" },
+              { "src": "https://telemetrics.es/cnem/", "caption": "CN El Masnou", "type": "photo" }
+            ]
+          },
+          "montgat": {
+            "name": "Montgat",
+            "code": "37152",
+            "region": "Maresme",
+            "webcams": [
+              { "src": "https://v.angelcam.com/iframe?v=16lb7jbdy4&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJjbW1vbnRnYXQuY2xpY2syc3RyZWFtLmNvbSIsImNhbWVyYV9pZCI6MzA1OTYsImV4cCI6MTU5MTY4MjQwN30.sb9GpiG1k7OYQh__KQQoqf5wltYF2ws0xxL5t_b4ReE&autoplay=1", "caption": "CM Montgat", "type": "iframe", "link": "https://clubcmm.click2stream.com/" }
+            ]
+          },
+          "el-prat": {
+            "name": "El Prat",
+            "code": "37144",
+            "region": "Baix Llobregat",
+            "webcams": [
+              { "src": "https://v.angelcam.com/iframe?v=enl022zey8&autoplay=0", "caption": "CM Vela El Prat", "type": "iframe", "link": "https://www.velaelprat.com/vela-el-prat" }
+            ]
+          },
+          "castelldefels": {
+            "name": "Castelldefels",
+            "code": "37143",
+            "region": "Baix Llobregat",
+            "webcams": [
+              { "src": "https://www.youtube.com/embed/oe5GPi_C7Go?controls=0", "caption": "Escola Garbí (17 Nudos)", "type": "iframe" }
+            ]
+          }
+        }
       },
-      "bcn-llevant": {
-        "name": "BCN Llevant",
-        "code": "37150",
-        "webcams": [
-          { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara6.jpg", "caption": "BCN Llevant", "type": "video" }
-        ]
-      },
-      "masnou": {
-        "name": "Masnou",
-        "code": "37152",
-        "webcams": [
-          { "src": "http://telemetrics.es/cnem/jpg/cnem_img.jpg", "caption": "Masnou", "type": "photo" },
-          { "src": "https://www.camaramar.com/webcam-playas/catalu%C3%B1a/barcelona/masnou", "caption": "Masnou", "type": "video" }
-        ]
-      },
-      "montgat": {
-        "name": "Montgat",
-        "code": "37152",
-        "webcams": [
-          { "src": "https://v.angelcam.com/iframe?v=16lb7jbdy4&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJjbW1vbnRnYXQuY2xpY2syc3RyZWFtLmNvbSIsImNhbWVyYV9pZCI6MzA1OTYsImV4cCI6MTU5MTY4MjQwN30.sb9GpiG1k7OYQh__KQQoqf5wltYF2ws0xxL5t_b4ReE&autoplay=1", "caption": "Montgat", "type": "video" }
-        ]
-      },
-      "el-prat": {
-        "name": "El Prat",
-        "code": "37144",
-        "webcams": [
-          { "src": "https://v.angelcam.com/iframe?v=enl022zey8&autoplay=0", "caption": "El Prat", "type": "video" }
-        ]
-      },
-      "castelldefels": {
-        "name": "Castelldefels",
-        "code": "37143",
-        "webcams": [
-          { "src": "https://www.youtube.com/embed/oe5GPi_C7Go?controls=0", "caption": "Castelldefels", "type": "video" }
-        ]
-      },
-      "port-ginesta": {
-        "name": "Port Ginesta",
-        "code": "37142",
-        "webcams": [
-          { "src": "https://v.angelcam.com/iframe?v=z1nr8jo9l0&autoplay=0&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW4iOiJpbmZvcmNlbHJhLmNvbSIsImNhbWVyYV9pZCI6NDAzNCwiZXhwIjoxNTQwMjgxMTA2fQ.HKEs7R47EicQyDSApvhyynT9-7p47YG4BFr_kVE2XGw", "caption": "Port Ginesta", "type": "video" }
-        ]
-      },
-      "sitges": {
-        "name": "Sitges",
-        "code": "37141",
-        "webcams": [
-          { "src": "https://www.ipcamlive.com/player/player.php?alias=65d33d2760353&autoplay=1&&token=rJjnDBVreI2kFLL1TkWL%2Fwaq5emYvM%2FBQnEbhIStbuo%3D", "caption": "Sitges", "type": "video" }
-        ]
-      }
-    }
-  },
-  "garraf-penedes": {
-    "name": "Garraf-Penedès",
-    "flag": "🏖️",
-    "locations": {
-      "vilanova": {
-        "name": "Vilanova i la Geltrú",
-        "code": "37140",
-        "webcams": [
-          { "src": "https://www.ccma.cat/el-temps/embed/vilanova-i-la-geltru/cameraembed/10/", "caption": "Vilanova i la Geltrú", "type": "photo" }
-        ]
-      },
-      "calafell": {
-        "name": "Calafell",
-        "code": "37133",
-        "webcams": [
-          { "src": "./assets/play-2935460_640.png", "caption": "Calafell", "type": "photo" },
-          { "src": "https://www.skylinewebcams.com/en/webcam/espana/cataluna/tarragona/calafell.html", "caption": "Calafell", "type": "video" }
-        ]
+      "garraf-penedes": {        
+        "name": "Garraf-Penedès",
+        "locations": {
+          "port-ginesta": {
+            "name": "Port Ginesta",
+            "code": "37142",
+            "region": "Garraf",
+            "webcams": [
+              { "src": "https://v.angelcam.com/iframe?v=z1nr8jo9l0&autoplay=0&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW4iOiJpbmZvcmNlbHJhLmNvbSIsImNhbWVyYV9pZCI6NDAzNCwiZXhwIjoxNTQwMjgxMTA2fQ.HKEs7R47EicQyDSApvhyynT9-7p47YG4BFr_kVE2XGw", "caption": "Port Ginesta", "type": "iframe" }
+            ]
+          },
+          "sitges": {
+            "name": "Sitges",
+            "code": "37141",
+            "region": "Garraf",
+            "webcams": [
+              { "src": "https://www.ipcamlive.com/player/player.php?alias=65d33d2760353&autoplay=1&&token=rJjnDBVreI2kFLL1TkWL%2Fwaq5emYvM%2FBQnEbhIStbuo%3D", "caption": "Hotel Calipolis", "type": "iframe" }
+            ]
+          },
+          "vilanova": {
+            "name": "Vilanova i la Geltrú",
+            "code": "37140",
+            "region": "Garraf",
+            "webcams": [
+              { "src": "https://www.ccma.cat/el-temps/embed/vilanova-i-la-geltru/cameraembed/10/", "caption": "Webcam TV3", "type": "photo" }
+            ]
+          },
+          "calafell": {
+            "name": "Calafell",
+            "code": "37133",
+            "region": "Baix Penedès",
+            "webcams": [
+              { "src": "https://www.skylinewebcams.com/en/webcam/espana/cataluna/tarragona/calafell.html", "caption": "Skyline webcams", "type": "video", "preview": "https://embed.skylinewebcams.com/img/3822.jpg" }
+            ]
+          }
+        }
       }
     }
   }

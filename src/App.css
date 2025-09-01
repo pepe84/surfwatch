@@ -1,8 +1,13 @@
 .card-img-top {
-    min-height: 118px;
+    height: 250px;
+    width: 100%;
 }
 
 .flip-horizontal {
     transform: rotate(180deg);
     display: inline-block; /* Ensures the transform works properly */
+}
+
+.territory-flag {
+    width: 20px;
 }
