@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { /*BrowserRouter*/ HashRouter as Router, Routes, Route } from "react-router-dom";
 import { BeachesProvider } from "./context/BeachesContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
