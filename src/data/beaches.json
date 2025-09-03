@@ -39,8 +39,8 @@
             "code": "37151",
             "region": "Barcelonès",
             "webcams": [
-              { "src": "http://cnbadalona.cat/cam/llevant.php", "caption": "Càmara Llevant CN Badalona", "type": "video", "preview": "http://2.136.193.46:8082/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=Cnb&pwd=Club@00&1756739364216" },
-              { "src": "http://cnbadalona.cat/cam/garbi.php", "caption": "Càmara Garbí CN Badalona", "type": "video", "preview": "http://2.136.193.46:8081/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=Cnb&pwd=Club@00&1756739798663" }
+              { "src": "http://cnbadalona.cat/cam/llevant.php", "caption": "Càmara Llevant CN Badalona", "type": "video", "preview": "http://2.136.193.46:8082/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=Cnb&pwd=Club@00&1756739364216", "refresh": 300 },
+              { "src": "http://cnbadalona.cat/cam/garbi.php", "caption": "Càmara Garbí CN Badalona", "type": "video", "preview": "http://2.136.193.46:8081/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=Cnb&pwd=Club@00&1756739798663", "refresh": 300 }
             ]            
           },
           "masnou": {
@@ -116,5 +116,86 @@
         }
       }
     }
-  }
+  },
+  "euskadi": {
+    "name": "Euskadi",
+    "flag": "Basque_Country.svg",
+    "zones": {
+      "bizkaia": {
+        "name": "Bizkaia",
+        "locations": {
+          "ereaga": {
+            "name": "Ereaga",
+            "code": "31116",
+            "region": "Getxo",
+            "webcams": [
+              { "src": "https://www.getxo.eus/es/kirolak/getxo-kirolak/nadar-ereaga", "caption": "Ajuntament Getxo", "type": "video", "preview": "https://s9.ipcamlive.com/streams/09tdwtez2fipqjxkk/snapshot.jpg", "refresh": 1000 }
+            ]
+          },
+          "la-salvaje": {
+            "name": "La Salvaje (Barinatxe)",
+            "code": "31115",
+            "region": "Sopela",
+            "webcams": [
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/barinatxe/camara1_snap.jpeg", "caption": "Kosta System", "type": "photo", "link": "https://www.escueladesurfsopelana.com/webcam-la-salvaje/" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/barinatxe/camara2_snap.jpeg", "caption": "Kosta System", "type": "photo", "link": "https://www.escueladesurfsopelana.com/webcam-la-salvaje/" }
+            ]
+          },
+          "sopelana": {
+            "name": "Sopelana (Atxabiribil)",
+            "code": "31115",
+            "region": "Sopela",
+            "webcams": [
+              { "src": "https://www.escueladesurfsopelana.com/webcam-sopelana/", "caption": "Peña Txuri - Surf Eskola Sopela", "type": "video", "preview": "https://s147.ipcamlive.com/streams/93wdvxb4gret07fmq/snapshot.jpg", "refresh": 1000 },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/arriatera/camara1_snap.jpeg", "caption": "Kosta System", "type": "photo", "link": "https://www.escueladesurfsopelana.com/webcam-sopelana/" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/arriatera/camara2_snap.jpeg", "caption": "Kosta System", "type": "photo", "link": "https://www.escueladesurfsopelana.com/webcam-sopelana/" }
+            ]
+          },
+          "plentzia-gorliz": {
+            "name": "Plentzia-Gorliz",
+            "code": "31114",
+            "region": "Plentzia-Gorliz",
+            "webcams": [
+              { "src": "http://webcam.gorliz.net/", "caption": "Ajuntament Gorliz", "type": "video", "preview": "http://62.99.56.33:81/jpg/1/image.jpg", "refresh": 500 }, 
+              { "src": "https://www.barcelona.cat/sites/default/files/clabsa/camara6.jpg", "caption": "Webcam 6 Ajuntament BCN", "type": "video" }
+            ]
+          },
+          "bakio": {
+            "name": "Bakio",
+            "code": "31113",
+            "region": "Bakio",
+            "webcams": [
+              { "src": "https://www.webviewcams.com/stream-image?ip=82.130.141.93&size=640", "caption": "Ajuntament Bakio", "type": "photo", "link": "http://webcam.bakio.eus/viewer/live/es/live.html" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/bakio/camara1_snap.jpeg", "caption": "Kosta System", "type": "photo" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/bakio/camara2_snap.jpeg", "caption": "Kosta System", "type": "photo" }
+            ]
+          },
+          "mundaka": {
+            "name": "Mundaka",
+            "code": "21112",
+            "region": "Urdaibai",
+            "webcams": [
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/mundaka/camara1_snap.jpeg", "caption": "Kosta System", "type": "photo" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/mundaka/camara2_snap.jpeg", "caption": "Kosta System", "type": "photo" }
+            ]
+          },
+          "laga": {
+            "name": "Laga",
+            "code": "21112",
+            "region": "Urdaibai",
+            "webcams": [
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/laga/camara1_snap.jpeg", "caption": "Kosta System", "type": "photo" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/laga/camara2_snap.jpeg", "caption": "Kosta System", "type": "photo" },
+              { "src": "https://www.kostasystem.com/wp-content/uploads/irudiak/laga/camara3_snap.jpeg", "caption": "Kosta System", "type": "photo" }
+            ]
+          }
+        }
+      },
+      "gipuzkoa": {        
+        "name": "Gipuzkoa",
+        "locations": {
+        }
+      }
+    }
+  }  
 }

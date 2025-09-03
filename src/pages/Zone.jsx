@@ -37,7 +37,7 @@ export default function Zone() {
                     <h3>{beach.name}</h3>
                   </Card.Title>
                   <Card.Text>
-                    <h4 class="text-secondary">{beach.region}</h4>
+                    { beach.region && <h4 class="text-secondary">{beach.region}</h4> }
                     <Link className="btn btn-primary" to={`/${tid}/${zid}/${bid}`}>
                       Més detalls
                     </Link>

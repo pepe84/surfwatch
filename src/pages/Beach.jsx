@@ -17,7 +17,7 @@ export default function Beach() {
       <Row className="align-items-center mb-3">
         <Col>
           <h2>{beach.name}</h2>
-          <h3 class="text-secondary">{beach.region}</h3>
+          { beach.region && <h3 class="text-secondary">{beach.region}</h3> }
         </Col>
         <Col xs="auto">
           <Button as={Link} to={`/${tid}/${zid}`} variant="secondary">
