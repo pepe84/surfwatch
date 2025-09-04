@@ -102,7 +102,7 @@
             "code": "37140",
             "region": "Garraf",
             "webcams": [
-              { "src": "https://www.ccma.cat/el-temps/embed/vilanova-i-la-geltru/cameraembed/10/", "caption": "Webcam TV3", "type": "photo" }
+              { "src": "https://www.ccma.cat/el-temps/embed/vilanova-i-la-geltru/cameraembed/10/", "caption": "Webcam TV3", "type": "iframe" }
             ]
           },
           "calafell": {
