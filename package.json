@@ -2,7 +2,7 @@
   "name": "surfwatch",
   "homepage": "https://pepe84.github.io/surfwatch",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

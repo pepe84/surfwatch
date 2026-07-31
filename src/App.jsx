@@ -1,4 +1,4 @@
-import { /*BrowserRouter*/ HashRouter as Router, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route, useParams } from "react-router-dom";
 import { BeachesProvider } from "./context/BeachesContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,6 +18,9 @@ function BeachWrapper() {
   const { tid, zid, bid } = useParams();
   return <Beach key={`${tid}-${zid}-${bid}`} />;
 }
+
+const Router = import.meta.env.BASE_URL === "/" 
+  ? BrowserRouter : HashRouter; // 👈 GitHub Pages
 
 export default function App() {
   return (
