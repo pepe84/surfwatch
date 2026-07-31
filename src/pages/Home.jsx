@@ -27,8 +27,8 @@ export default function Home() {
           const badgeText = cardBg === "dark" ? "dark" : "light";
 
           return (
-            <Col xs={12} md={6} lg={4} key={zid} className="mb-4">
-              <Card bg={cardBg} text={cardText}>
+            <Col xs={12} md={6} lg={4} key={zid} className="mb-4 d-flex">
+              <Card bg={cardBg} text={cardText} className="flex-fill">
                 <Card.Body>
                   <Card.Title className="d-flex justify-content-between align-items-center">
                     <span className="d-inline-flex align-items-center">
